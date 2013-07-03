@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css; charset=utf-8" />
+<title>ロールオーバースライドショー</title>
+<link rel="stylesheet" type="text/css" href="css/main.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="libs/rollslyder/cRollSlyder.css" media="screen" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script type="text/javascript" src="libs/rollslyder/cRollSlyder.js"></script>
+<script type="text/javascript">
+
+
+$(function(){
+	/*スライド初期化
+		cRollSlyder.initSlyde(xSlideNum,xTime);
+			xSlideNum:最初に表示させるスライドの番号（0～）
+			xTime：フェード時間（ミリ秒）
+	*/
+	cRollSlyder.initSlyde(3,1000);
+	
+	/*スライドの自動切換え開始
+		cRollSlyder.autoPlay(xTime);
+			xTime：スライド切替えまでの時間（ミリ秒）
+	*/
+	cRollSlyder.autoPlay(3000);
+});
+
+</script>
+</head>
+
+<body>
+
+<div id="mainContent">
+	<h1>ロールオーバースライドショー</h1>
+	
+	<!--スライド部分-->
+	<ul id="syldeMain">
+		<li class="rsImg"><img src="images/001.jpg" width="600" height="450" alt="" /></li>
+		<li class="rsImg"><img src="images/002.jpg" width="600" height="450" alt="" /></li>
+		<li class="rsImg"><img src="images/003.jpg" width="600" height="450" alt="" /></li>
+		<li class="rsImg"><img src="images/004.jpg" width="600" height="450" alt="" /></li>
+		<li class="rsImg"><img src="images/005.jpg" width="600" height="450" alt="" /></li>
+	</ul>
+	
+	<!--サムネイル部分-->
+	<ul id="slydeNavi">
+		<li class="rsThum"><a href="#"><img src="images/001.jpg" width="110" height="83" alt="" /></a></li>
+		<li class="rsThum"><a href="#"><img src="images/002.jpg" width="110" height="83" alt="" /></a></li>
+		<li class="rsThum"><a href="#"><img src="images/003.jpg" width="110" height="83" alt="" /></a></li>
+		<li class="rsThum"><a href="#"><img src="images/004.jpg" width="110" height="83" alt="" /></a></li>
+		<li class="rsThum"><a href="#"><img src="images/005.jpg" width="110" height="83" alt="" /></a></li>
+	</ul>
+	
+</div>
+
+</body>
+</html>

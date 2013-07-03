@@ -1,0 +1,21 @@
+
+a{outline:none;}
+
+/*---------------------------------*/
+
+.rsImg{
+	display:none;
+}
+
+.rsThum{
+	/**/
+}
+
+
+/*
+サムネイル反転時のスタイル
+*/
+.tumOver{
+	opacity:0.4;
+	filter: alpha(opacity=40);
+}

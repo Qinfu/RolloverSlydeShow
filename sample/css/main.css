@@ -1,0 +1,41 @@
+
+#mainContent{
+	width:600px;
+	margin:0 auto;
+}
+
+/*---------------------------------*/
+
+ul#syldeMain{
+	list-style-type: none;
+	display:block;
+	width:600px;
+	height:450px;
+	overflow:hidden;
+	position:relative;
+	background-color:#666666;
+	margin:0;
+	padding:0;
+}
+
+ul#syldeMain li{
+	position:absolute;
+	top:0;
+	left:0;
+}
+
+/*---------------------------------*/
+
+ul#slydeNavi{
+	list-style-type: none;
+	margin:0;
+	padding:0;
+}
+
+ul#slydeNavi li{
+	float:left;
+	display: inline;
+	margin:0;
+	padding:5px;
+	/*cursor:pointer;*/
+}
