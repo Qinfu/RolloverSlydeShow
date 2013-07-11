@@ -1,29 +1,28 @@
-RollOver Slydeshow
------------------------
+#RollOver Slydeshow
 
-【説明】  
-マウスオーバーで画像が切り変わるスライドショー。 要、jQuely。  
+A simple slydeshow script with mouse over action. need jQuely. 
 
 
-【使い方】  
+##Installation 
 
-1.jQuely、cRollSlyder.js、cRollSlyder.cssを読み込み。
+1.Include jQuely, cRollSlyder.js, cRollSlyder.css
 
-2.スライド画像には「rsImg」、サムネイルには「rsThum」をClass指定。
+2.Set "rsImg" class to Slyde images.And set "rsThum" to thumbnail.
 
-3.jQuelyのロード完了を待って、スライドショー実行
+3.Call init function after page datas loaded.
 
-【簡易リファレンス】  
 
-●スライド初期化  
+##Usage  
+
+Initialise Slydeshow.:  
 　　　　cRollSlyder.initSlyde(<i>xSlideNum,xTime</i>);  
-　　　　　　　　xSlideNum:最初に表示させるスライドの番号（0～）  
-　　　　　　　　xTime：フェード時間（ミリ秒）  
+　　　　　　　　xSlideNum:default slyde number  
+　　　　　　　　xTime:fade in/out time（millisecond)  
 
  
-●スライドの自動切換え開始  
+Start auto change slyde timer:   
 　　　　cRollSlyder.autoPlay(<i>xTime</i>);  
-　　　　　　　　xTime：スライド切替えまでの時間（ミリ秒）  
+　　　　　　　　xTime: dilay time（millisecond)  
 
 ex）  
 
